@@ -1,0 +1,337 @@
+baseline {
+  feature {
+    name: "company"
+    value_count {
+      min: 1
+      max: 1
+    }
+    type: BYTES
+    domain: "company"
+    presence {
+      min_count: 1
+    }
+  }
+  feature {
+    name: "payment_type"
+    type: BYTES
+    domain: "payment_type"
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "big_tipper"
+    type: INT
+    bool_domain {
+    }
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "dropoff_census_tract"
+    value_count {
+      min: 1
+      max: 1
+    }
+    type: INT
+    presence {
+      min_count: 1
+    }
+  }
+  feature {
+    name: "dropoff_community_area"
+    value_count {
+      min: 1
+      max: 1
+    }
+    type: INT
+    presence {
+      min_count: 1
+    }
+  }
+  feature {
+    name: "dropoff_latitude"
+    value_count {
+      min: 1
+      max: 1
+    }
+    type: FLOAT
+    presence {
+      min_count: 1
+    }
+  }
+  feature {
+    name: "dropoff_longitude"
+    value_count {
+      min: 1
+      max: 1
+    }
+    type: FLOAT
+    presence {
+      min_count: 1
+    }
+  }
+  feature {
+    name: "fare"
+    value_count {
+      min: 1
+      max: 1
+    }
+    type: FLOAT
+    presence {
+      min_count: 1
+    }
+  }
+  feature {
+    name: "pickup_census_tract"
+    value_count {
+      min: 1
+      max: 1
+    }
+    type: INT
+    presence {
+      min_count: 1
+    }
+  }
+  feature {
+    name: "pickup_community_area"
+    value_count {
+      min: 1
+      max: 1
+    }
+    type: INT
+    presence {
+      min_count: 1
+    }
+  }
+  feature {
+    name: "pickup_latitude"
+    value_count {
+      min: 1
+      max: 1
+    }
+    type: FLOAT
+    presence {
+      min_count: 1
+    }
+  }
+  feature {
+    name: "pickup_longitude"
+    value_count {
+      min: 1
+      max: 1
+    }
+    type: FLOAT
+    presence {
+      min_count: 1
+    }
+  }
+  feature {
+    name: "tips"
+    value_count {
+      min: 1
+      max: 1
+    }
+    type: FLOAT
+    presence {
+      min_count: 1
+    }
+  }
+  feature {
+    name: "trip_miles"
+    value_count {
+      min: 1
+      max: 1
+    }
+    type: FLOAT
+    presence {
+      min_count: 1
+    }
+  }
+  feature {
+    name: "trip_seconds"
+    value_count {
+      min: 1
+      max: 1
+    }
+    type: INT
+    presence {
+      min_count: 1
+    }
+  }
+  feature {
+    name: "trip_start_day"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "trip_start_hour"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "trip_start_month"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  feature {
+    name: "trip_start_timestamp"
+    type: INT
+    presence {
+      min_fraction: 1.0
+      min_count: 1
+    }
+    shape {
+      dim {
+        size: 1
+      }
+    }
+  }
+  string_domain {
+    name: "company"
+    value: "0118 - 42111 Godfrey S.Awir"
+    value: "1085 - 72312 N and W Cab Co"
+    value: "1247 - 72807 Daniel Ayertey"
+    value: "1469 - 64126 Omar Jada"
+    value: "2092 - 61288 Sbeih company"
+    value: "2192 - 73487 Zeymane Corp"
+    value: "24 Seven Taxi"
+    value: "2733 - 74600 Benny Jona"
+    value: "2823 - 73307 Lee Express Inc"
+    value: "3011 - 66308 JBL Cab Inc."
+    value: "303 Taxi"
+    value: "3141 - 87803 Zip Cab"
+    value: "3152 - 97284 Crystal Abernathy"
+    value: "3201 - C&D Cab Co Inc"
+    value: "3556 - 36214 RC Andrews Cab"
+    value: "3591 - 63480 Chuks Cab"
+    value: "3591- Chuk\'s Cab"
+    value: "3623 - 72222 Arrington Enterprises"
+    value: "3721 - Santamaria Express, Alvaro Santamaria"
+    value: "4053 - Adwar H. Nikola"
+    value: "4615 - Tyrone Henderson"
+    value: "4623 - 27290 Jay Kim"
+    value: "5 Star Taxi"
+    value: "5006 - 39261 Salifu Bawa"
+    value: "5062 - 34841 Sam Mestas"
+    value: "5074 - 54002 Ahzmi Inc"
+    value: "5129 - 87128"
+    value: "5724 - 72965 KYVI Cab Inc"
+    value: "5724 - KYVI Cab Inc"
+    value: "5776 - Mekonen Cab Company"
+    value: "585 - 88805 Valley Cab Co"
+    value: "5874 - 73628 Sergey Cab Corp."
+    value: "5874 - Sergey Cab Corp."
+    value: "6057 - 24657 Richard Addo"
+    value: "6488 - 83287 Zuha Taxi"
+    value: "6574 - Babylon Express Inc."
+    value: "6742 - 83735 Tasha ride inc"
+    value: "6743 - 78771 Luhak Corp"
+    value: "American United"
+    value: "American United Taxi Affiliation"
+    value: "Blue Diamond"
+    value: "Blue Ribbon Taxi Association Inc."
+    value: "C & D Cab Co Inc"
+    value: "Checker Taxi"
+    value: "Checker Taxi Affiliation"
+    value: "Chicago Carriage Cab Corp"
+    value: "Chicago Elite Cab Corp."
+    value: "Chicago Elite Cab Corp. (Chicago Carriag"
+    value: "Chicago Independents"
+    value: "Chicago Medallion Leasing INC"
+    value: "Chicago Medallion Management"
+    value: "Chicago Taxicab"
+    value: "Choice Taxi Association"
+    value: "City Service"
+    value: "Dispatch Taxi Affiliation"
+    value: "Dispatch Taxi Affiliation (credit hold)"
+    value: "Flash Cab"
+    value: "Globe Taxi"
+    value: "Gold Coast Taxi"
+    value: "KOAM Taxi Association"
+    value: "Leonard Cab Co"
+    value: "Medallion Leasin"
+    value: "Metro Group"
+    value: "Metro Jet Taxi A"
+    value: "Norshore Cab"
+    value: "Northwest Management LLC"
+    value: "Nova Taxi Affiliation Llc"
+    value: "Patriot Taxi Dba Peace Taxi Associat"
+    value: "Patriot Trans Inc"
+    value: "Peace Taxi Assoc"
+    value: "Petani Cab Corp"
+    value: "Service Taxi Association"
+    value: "Setare Inc"
+    value: "Star North Management LLC"
+    value: "Suburban Dispatch LLC"
+    value: "Sun Taxi"
+    value: "T.A.S. - Payment Only"
+    value: "Taxi Affiliation Service Yellow"
+    value: "Taxi Affiliation Services"
+    value: "Taxicab Insurance Agency, LLC"
+    value: "Top Cab Affiliation"
+    value: "Top Cab Affiliation - credit hold"
+    value: "Yellow Cab"
+    value: "0694 - 59280 Chinesco Trans Inc"
+    value: "2192 - Zeymane Corp"
+    value: "2733 - Benny Jona"
+    value: "2823 - 73307 Seung Lee"
+    value: "3385 - Eman Cab"
+    value: "4615 - 83503 Tyrone Henderson"
+    value: "5129 - Mengisti Taxi"
+    value: "5724 - 75306 KYVI Cab Inc"
+    value: "6743 - Luhak Corp"
+    value: "Park Ridge Taxi and Livery"
+    value: "U Taxicab"
+  }
+  string_domain {
+    name: "payment_type"
+    value: "Cash"
+    value: "Credit Card"
+    value: "Dispute"
+    value: "Mobile"
+    value: "No Charge"
+    value: "Pcard"
+    value: "Prcard"
+    value: "Unknown"
+    value: "Split"
+  }
+}
+anomaly_name_format: SERIALIZED_PATH

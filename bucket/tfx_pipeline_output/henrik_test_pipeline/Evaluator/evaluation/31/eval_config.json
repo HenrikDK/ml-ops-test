@@ -1,0 +1,47 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "name": "candidate",
+        "labelKey": "big_tipper"
+      },
+      {
+        "name": "baseline",
+        "labelKey": "big_tipper",
+        "isBaseline": true
+      }
+    ],
+    "slicingSpecs": [
+      {}
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "BinaryAccuracy",
+            "threshold": {
+              "valueThreshold": {
+                "lowerBound": 0.6
+              },
+              "changeThreshold": {
+                "absolute": -1e-10,
+                "direction": "HIGHER_IS_BETTER"
+              }
+            }
+          }
+        ],
+        "modelNames": [
+          "candidate",
+          "baseline"
+        ]
+      }
+    ]
+  },
+  "version": "0.23.0",
+  "dataLocation": "<user provided PCollection>",
+  "fileFormat": "<unknown>",
+  "modelLocations": {
+    "baseline": "gs://retail-demo-platform-dev-kubeflowpipelines-default/tfx_pipeline_output/henrik_test_pipeline/Trainer/model/15/serving_model_dir",
+    "candidate": "gs://retail-demo-platform-dev-kubeflowpipelines-default/tfx_pipeline_output/henrik_test_pipeline/Trainer/model/24/serving_model_dir"
+  }
+}

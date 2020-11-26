@@ -1,0 +1,35 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "labelKey": "big_tipper"
+      }
+    ],
+    "slicingSpecs": [
+      {}
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "BinaryAccuracy",
+            "threshold": {
+              "valueThreshold": {
+                "lowerBound": 0.6
+              }
+            }
+          }
+        ],
+        "modelNames": [
+          ""
+        ]
+      }
+    ]
+  },
+  "version": "0.23.0",
+  "dataLocation": "<user provided PCollection>",
+  "fileFormat": "<unknown>",
+  "modelLocations": {
+    "": "gs://retail-demo-platform-dev-kubeflowpipelines-default/tfx_pipeline_output/henrik_test_pipeline/Trainer/model/15/serving_model_dir"
+  }
+}
